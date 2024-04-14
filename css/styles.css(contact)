@@ -1,0 +1,58 @@
+/* Styles for Contact Us section */
+.container-xxl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+}
+
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+
+.text-primary {
+    color: #007bff; /* Adjust color as needed */
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+/* Styles for Google Maps iframe */
+.client-slider, .col-md-6 {
+    flex: 1 1 50%;
+    max-width: 50%;
+}
+
+/* Styles for Contact Form */
+.form-floating {
+    position: relative;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Additional styles for responsive design */
+@media (max-width: 992px) {
+    .client-slider, .col-md-6 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
