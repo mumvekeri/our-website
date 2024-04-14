@@ -56,3 +56,119 @@
         max-width: 100%;
     }
 }
+
+
+/* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container-xxl {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+/* Map styles */
+.col-md-6 iframe {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    border: none;
+}
+
+/* Form styles */
+#contact-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-floating {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    height: 100px; /* Adjust as needed */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Animation */
+.wow {
+    visibility: hidden;
+}
+
+.fadeInUp.wow {
+    animation: fadeInUp 1s;
+}
+
+.fadeInLeft.wow {
+    animation: fadeInLeft 1s;
+}
+
+.fadeInRight.wow {
+    animation: fadeInRight 1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

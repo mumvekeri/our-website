@@ -1,56 +1,69 @@
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/bootstrap.min.css"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
 
-
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-primary text-uppercase">Contact Us </h6>
-            <h1 class="mb-5">Get in Touch</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
-                <iframe class="position-relative rounded w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.425870095708!2d27.967980772865314!3d-26.052334957801296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9575cdedf94225%3A0xbfa6d5a0d77d4be!2s137%20Bellairs%20Dr%2C%20Northriding%2C%20Randburg%2C%202169!5e0!3m2!1sen!2sza!4v1713125188936!5m2!1sen!2sza"
-                    frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
+    <link rel="stylesheet" href="css/styles.css(contact)">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="text-primary text-uppercase">Contact Us</h6>
+                <h1 class="mb-5">Get in Touch</h1>
             </div>
-            <div class="col-md-6">
-                <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <iframe class="position-relative rounded w-100 h-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.425870095708!2d27.967980772865314!3d-26.052334957801296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9575cdedf94225%3A0xbfa6d5a0d77d4be!2s137%20Bellairs%20Dr%2C%20Northriding%2C%20Randburg%2C%202169!5e0!3m2!1sen!2sza!4v1713125188936!5m2!1sen!2sza"
+                        frameborder="0" style="min-height: 300px; border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <div class="wow fadeInRight" data-wow-delay="0.2s">
+                        <form id="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="first-name" placeholder="Your Name">
+                                        <label for="first-name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <!--js library -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
