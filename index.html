@@ -3,243 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modern Website</title>
 
-    <!--link css files-->
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
 
-    <link href="css/bootstrap-icons.css" rel="stylesheet">
+        #pricing-section {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+    }
+    .single-price-table {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    .single-price-table:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+    .single-price-table h4 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .single-price-table p {
+        color: #777;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .single-price-table strong {
+        color: #333;
+        font-size: 30px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .single-price-table ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .single-price-table ul li {
+        color: #777;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .single-price-table a {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .single-price-table a:hover {
+        background-color: #0056b3;
+    }
+    </style>
 </head>
-
 <body id="section_1">
 
-        <header class="site-header">
-            <div class="container">
-                <div class="row">
-                    
-                    <!--TODO-->
-                    <div class="col-lg-8 col-12 d-flex flex-wrap">
-                        <p class="d-flex me-4 mb-0">
-                            <i class="bi-geo-alt me-2"></i>
-                            <a href="https://www.google.com/maps/search/?api=1&query=" target="_blank"></a>
-                        </p>
-                    </div>                    
-                    
-                        <p class="d-flex mb-0">
-                            <i class="bi-envelope me-2"></i>
-                            <a href="mailto:example@gmail.com">example@gmail.com</a>
-                        </p>
-                    </div>
-                    
-
-                    <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
-                        <ul class="social-icon">
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-twitter"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-facebook"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-instagram"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-youtube"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                                <a href="#" class="social-icon-link bi-whatsapp"></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
+<header class="site-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12 d-flex flex-wrap align-items-center">
+                <p class="d-flex me-4 mb-0">
+                    <i class="bi bi-geo-alt me-2"></i>
+                    <a href="https://www.google.com/maps/search/?api=1&query=137+Bellairs+Drive,+NorthRiding,+South+Africa" target="_blank">137 Bellairs Drive, NorthRiding, South Africa</a>
+                </p>
+                <p class="d-flex mb-0">
+                    <i class="bi bi-envelope me-2"></i>
+                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                </p>
             </div>
-        </header>
+            <div class="col-lg-3 col-12 d-flex justify-content-end align-items-center">
+                <ul class="social-icons">
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-twitter"></a>
+                    </li>
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-facebook"></a>
+                    </li>
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-instagram"></a>
+                    </li>
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-youtube"></a>
+                    </li>
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-whatsapp"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
 
-
-        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="#" class="logo img-fluid" alt="#">
-                    <span>
-                        #
-                        <small>#</small>
-                    </span>
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#top">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_2">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_3">Services</a>
-                        </li>
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="news.html">Packages</a></li>
-
-                                <li><a class="dropdown-item active" href="news-detail.html">Payments</a></li>
-
-                                <li><a class="dropdown-item active" href="news-detail.html">Testimonies</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_5">Contact</a>
-                        </li>
+<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span>
+                Tanashe
+                <small>Prac</small>
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#top">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#section_2">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#section_3">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarLightDropdownMenuLink"
+                       role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarLightDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Packages</a></li>
+                        <li><a class="dropdown-item active" href="#">Payments</a></li>
+                        <li><a class="dropdown-item active" href="#">Testimonies</a></li>
                     </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<main>
+
+    <!--TODO-->
+    <section class="section-padding section-bg" id="section_2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                    <img src="images/scott-graham-OQMZwNd3ThU-unsplash.jpg" class="custom-text-box-image img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="custom-text-box">
+                        <h2 class="mb-2">Our Story</h2>
+                        <p class="mb-0">At Tanashe, we are passionate about crafting exceptional digital experiences. Our journey began with a simple goal: to redefine the standards of web development. With a team of dedicated professionals, we delve into the realm of creativity and innovation to bring your ideas to life. From conceptualization to deployment, we ensure every project reflects our commitment to excellence and client satisfaction.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="custom-text-box mb-lg-0">
+                                <h2 class="mb-3">Our Mission</h2>
+                                <p>At Tanashe, our mission is clear: to empower businesses with innovative web solutions that drive growth and success. We strive to be more than just a service provider; we aim to be your trusted partner in the digital landscape. By combining creativity, technical expertise, and strategic thinking, we help you unlock the full potential of your online presence. Our ultimate goal is to exceed your expectations and deliver results that make a difference.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
+    </section>
 
-        <main>
-            <section class="hero-section hero-section-full-height">
-                <div class="container-fluid">
-                    <div class="row">
-
-                        <div class="col-lg-12 col-12 p-0">
-                            <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="#" class="carousel-image img-fluid" alt="...">
-                                        
-                                        <div class="carousel-caption d-flex flex-column justify-content-end">
-                                        </div>
-                                    </div>
-
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-    
-                                    <button class="carousel-control-next" type="button" data-bs-target="#hero-slide" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                            </div>
-    
+    <!--ABOUT US-->
+    <section id="about-us">
+        <div class="container">
+            <div class="theme-title">
+                <h2>ABOUT OUR WEBSITE</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="single-about-content">
+                        <div class="icon round-border tran3s">
+                            <i class="bi bi-code-slash" aria-hidden="true"></i>
                         </div>
+                        <h5><a href="#" class="tran3s">Web Development</a></h5>
+                        <p><i class="bi bi-check-circle-fill text-success"></i> We specialize in crafting engaging and functional websites that meet your unique business needs. From intuitive user interfaces to seamless backend functionality, our web development services ensure your online presence stands out.</p>
+                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
                     </div>
-                </section>
-
-                <!--TODO-->
-                <section class="section-padding section-bg" id="section_2">
-                    <div class="container">
-                        <div class="row">
-    
-                            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                                <img src="#" class="custom-text-box-image img-fluid" alt="">
-                            </div>
-    
-                            <div class="col-lg-6 col-12">
-                                <div class="custom-text-box">
-                                    <h2 class="mb-2">Our Story</h2>
-    
-                                    <h5 class="mb-3">#</h5>
-    
-                                    <p class="mb-0">At [Your Company Name], we are passionate about crafting exceptional digital experiences. Our journey began with a simple goal: to redefine the standards of web development. With a team of dedicated professionals, we delve into the realm of creativity and innovation to bring your ideas to life. From conceptualization to deployment, we ensure every project reflects our commitment to excellence and client satisfaction.</p>
-
-                                </div>
-                            
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="custom-text-box mb-lg-0">
-                                            <h5 class="mb-3">Our Mission</h5>
-    
-                                            <p>At [Your Company Name], our mission is clear: to empower businesses with innovative web solutions that drive growth and success. We strive to be more than just a service provider; we aim to be your trusted partner in the digital landscape. By combining creativity, technical expertise, and strategic thinking, we help you unlock the full potential of your online presence. Our ultimate goal is to exceed your expectations and deliver results that make a difference.</p>
-    
-                                        </div>
-                                    </div>
-
-                                    </div>
-
-                            </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="single-about-content">
+                        <div class="icon round-border tran3s">
+                            <i class="bi bi-brush" aria-hidden="true"></i>
                         </div>
+                        <h5><a href="#" class="tran3s">Graphic Designing</a></h5>
+                        <p><i class="bi bi-check-circle-fill text-success"></i> Our graphic design services encompass creating captivating visuals that enhance your brand identity. From logos to marketing materials, we focus on delivering designs that leave a lasting impression on your audience.</p>
+                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
                     </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="single-about-content">
+                        <div class="icon round-border tran3s">
+                            <i class="bi bi-megaphone" aria-hidden="true"></i>
+                        </div>
+                        <h5><a href="#" class="tran3s">Digital Media</a></h5>
+                        <p><i class="bi bi-check-circle-fill text-success"></i> Leveraging digital media, we help amplify your online presence and engage your target audience effectively. From social media management to content creation, our digital media services are tailored to boost your brand visibility.</p>
+                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="single-about-content">
+                        <div class="icon round-border tran3s">
+                            <i class="bi bi-bar-chart-line" aria-hidden="true"></i>
+                        </div>
+                        <h5><a href="#" class="tran3s">Online Marketing</a></h5>
+                        <p><i class="bi bi-check-circle-fill text-success"></i> Our online marketing strategies are designed to enhance your brand visibility and drive targeted traffic to your website. From SEO to PPC campaigns, we employ effective techniques to help your business succeed in the competitive online landscape.</p>
+                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+</main>
 
-                    </section>
-
-                    <!--ABOUT US-->
-                    <section id="about-us">
-                        <div class="container">
-                            <div class="theme-title">
-                                <h2>ABOUT OUR WEBSITE</h2>
-                                <p>#</p>
-                            </div>
-        
-                            <div class="row">
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="single-about-content">
-                                        <div class="icon round-border tran3s">
-                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                        </div>
-                                        <h5><a href="#" class="tran3s">Web Development</a></h5>
-                                        <p>#</p>
-                                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="single-about-content">
-                                        <div class="icon round-border tran3s">
-                                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                                        </div>
-                                        <h5><a href="#" class="tran3s">Graphic Designing</a></h5>
-                                        <p>#</p>
-                                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-                                    </div>
-                                </div>
-        
-        
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="single-about-content">
-                                        <div class="icon round-border tran3s">
-                                            <i class="fa fa-life-ring" aria-hidden="true"></i>
-                                        </div>
-                                        <h5><a href="#" class="tran3s">Digital Media</a></h5>
-                                        <p>#</p>
-                                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-                                    </div> 
-                                </div>
-        
-                                <div class="col-lg-3 col-md-3 col-sm-6">
-                                    <div class="single-about-content">
-                                        <div class="icon round-border tran3s">
-                                            <i class="fa fa-line-chart" aria-hidden="true"></i>
-                                        </div>
-                                        <h5><a href="#" class="tran3s">Online Marketing</a></h5>
-                                        <p>#</p>
-                                        <a href="#" class="more tran3s hvr-bounce-to-right">More Details</a>
-                                    </div>
-                                </div> 
-                            </div>
-                            </section>
-
-                            
-
-
-
-        </main>
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
