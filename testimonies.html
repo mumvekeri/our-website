@@ -5,62 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client Testimonies</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-    #our-client .client-slider {
-        text-align: center;
-        margin:58px 0 50px 0;
-    }
-    #our-client .client-slider img {
-        margin: 0 auto;
-    }
-    #our-client .client-slider p {
-        font-size: 18px;
-        line-height: 28px;
-        color:#343434;
-        width: 80%;
-        margin: 33px auto 24px auto;
-    }
-    #our-client .client-slider h6 {
-        text-transform: capitalize;
-        margin-bottom: 45px;
-    }
-    #our-client .owl-theme .owl-dots .owl-dot span {
-        width: 13px;
-        height: 13px;
-        background: #fff;
-        border: 1px solid#9d9f9f;
-        margin: 0 5px;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-    #our-client .client-slider p {width: 70%;}
 
-}
-@media (max-width: 767px) {
-  .scroll-top {bottom: 10px; right:5px;}
-  #our-client .client-slider p {width: 100%;}
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
 
+        .testimonial-section {
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            padding: 50px 0;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-section::before {
+            content: "";
+            background-color: #f8f9fa;
+            border-radius: 50%;
+            position: absolute;
+            top: -100px;
+            left: -30px;
+            margin: auto;
+            width: 250px;
+            height: 250px;
+            z-index: -1;
+        }
+
+        .testimonial-section::after {
+            content: "";
+            background: #f8f9fa;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -110px;
+            right: -80px;
+            width: 350px;
+            height: 350px;
+            z-index: -1;
+        }
+
+        .theme-title {
+            margin-bottom: 30px;
+        }
+
+        .theme-title h2 {
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .client-slider .item {
+            background-color: #618de0;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .client-slider .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 255, 0.2); /* Changed box-shadow color to blue */
+            background-color: #f1f1f1;
+        }
+
+        .client-slider img {
+            margin-bottom: 20px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .client-slider p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #555;
+        }
+
+        .client-slider h6 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+            text-transform: uppercase;
+        }
+
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1;
+        }
+
+        .owl-nav .owl-prev,
+        .owl-nav .owl-next {
+            background-color: #115e7a;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            color: #333;
+            font-size: 20px;
+            line-height: 36px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .owl-nav .owl-prev:hover,
+        .owl-nav .owl-next:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media (max-width: 767px) {
+            .client-slider .item {
+                width: 90%;
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="our-client">
-        <div class="container">
+    <div class="container">
+        <div class="testimonial-section">
             <div class="theme-title">
                 <h2>OUR HAPPY CLIENTS</h2>
             </div>
-            <div class="client-slider">
+            <div class="client-slider owl-carousel owl-theme">
                 <div class="item">
-                    <img src="" alt="Client">
+                    <img src="images/scott-graham-OQMZwNd3ThU-unsplash.jpg" alt="Client 1">
                     <p>"Working with the team at Tanashe was an absolute pleasure. They delivered a stunning website for my business, and their attention to detail and professionalism throughout the process was commendable."</p>
                     <h6>Chidochashe</h6>
                 </div>
                 <div class="item">
-                    <img src="" alt="Client">
+                    <img src="images/scott-graham-OQMZwNd3ThU-unsplash.jpg" alt="Client 2">
                     <p>"I couldn't be happier with the website Tanashe created for me. It perfectly captures the essence of my brand, and the team's expertise and creativity truly shine through in every aspect of the design."</p>
                     <h6>Hilary</h6>
                 </div>
                 <div class="item">
-                    <img src="" alt="Client">
+                    <img src="images/scott-graham-OQMZwNd3ThU-unsplash.jpg" alt="Client 3">
                     <p>"Choosing Tanashe for my web development needs was one of the best decisions I've made for my business. Their professionalism, responsiveness, and ability to bring my vision to life exceeded all my expectations."</p>
                     <h6>Tanashe</h6>
                 </div>
@@ -68,8 +162,43 @@
         </div>
     </div>
 
+    <div class="owl-nav">
+        <button class="owl-prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="owl-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.client-slider').owlCarousel({
+                loop:true,
+                margin:20,
+                nav:false,
+                dots:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+
+            $('.owl-prev').click(function() {
+                $('.client-slider').trigger('prev.owl.carousel');
+            });
+
+            $('.owl-next').click(function() {
+                $('.client-slider').trigger('next.owl.carousel');
+            });
+        });
+    </script>
 </body>
 </html>
