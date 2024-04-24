@@ -9,76 +9,121 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <style>
-       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #171616;
+            font-size: 16px;
+        }
 
-        #pricing-section {
-        background-color: #f9f9f9;
-        padding: 50px 0;
-    }
-    .single-price-table {
-        background-color: #fff;
-        border-radius: 5px;
-        padding: 30px;
-        margin-bottom: 30px;
-        text-align: center;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s ease;
-    }
-    .single-price-table:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-    }
-    .single-price-table h4 {
-        color: #333;
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-    .single-price-table p {
-        color: #777;
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-    .single-price-table strong {
-        color: #333;
-        font-size: 30px;
-        display: block;
-        margin-bottom: 20px;
-    }
-    .single-price-table ul {
-        list-style-type: none;
-        padding: 0;
-        margin-bottom: 20px;
-    }
-    .single-price-table ul li {
-        color: #777;
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-    .single-price-table a {
-        display: inline-block;
-        background-color: #007bff;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    .single-price-table a:hover {
-        background-color: #0056b3;
-    }
+        .site-header {
+            background-color: #6392c2;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .site-header a {
+            color: #221f1f;
+        }
+
+        .social-icons a {
+            color: #6b4cc0;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #a76161;
+        }
+
+        .navbar-nav .nav-link {
+            color: #976c6c !important;
+        }
+        .navbar-brand .big-text {
+        font-size: 40px;
+        }
+
+        .theme-title h2 {
+            color: #007bff;
+        }
+
+        .single-about-content {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .single-about-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .single-about-content h5 a {
+            color: #007bff;
+        }
+
+        .single-about-content p {
+            color: #666;
+        }
+
+        .video-section {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #35737f;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #b876b4;
+            display: block;
+            margin-bottom:
+        }
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .footer-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+        }
+
     </style>
 </head>
-<body id="section_1">
+<body id="top">
 
 <header class="site-header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-12 d-flex flex-wrap align-items-center">
+            <div class="col-lg-6 col-md-6 col-12 d-flex flex-wrap align-items-center">
                 <p class="d-flex me-4 mb-0">
                     <i class="bi bi-geo-alt me-2"></i>
                     <a href="https://www.google.com/maps/search/?api=1&query=137+Bellairs+Drive,+NorthRiding,+South+Africa" target="_blank">137 Bellairs Drive, NorthRiding, South Africa</a>
@@ -88,7 +133,7 @@
                     <a href="mailto:example@gmail.com">example@gmail.com</a>
                 </p>
             </div>
-            <div class="col-lg-3 col-12 d-flex justify-content-end align-items-center">
+            <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-end align-items-center">
                 <ul class="social-icons">
                     <li class="social-icon-item">
                         <a href="#" class="social-icon-link bi-twitter"></a>
@@ -111,15 +156,14 @@
     </div>
 </header>
 
-<nav class="navbar navbar-expand-lg bg-light shadow-lg">
+<nav class="navbar navbar-expand-lg bg-dark shadow-lg">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <span>
-                Tanashe
-                <small>Prac</small>
-            </span>
+            <span class="big-text">Tanashe</span> <small>Prac</small>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -136,11 +180,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link click-scroll dropdown-toggle" href="#" id="navbarLightDropdownMenuLink"
-                       role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
                     <ul class="dropdown-menu" aria-labelledby="navbarLightDropdownMenuLink">
                         <li><a class="dropdown-item" href="#">Packages</a></li>
-                        <li><a class="dropdown-item active" href="#">Payments</a></li>
-                        <li><a class="dropdown-item active" href="#">Testimonies</a></li>
+                        <li><a class="dropdown-item" href="#">Payments</a></li>
+                        <li><a class="dropdown-item" href="#">Testimonies</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
@@ -151,15 +195,25 @@
     </div>
 </nav>
 
-
 <main>
+    <section class="video-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video-container">
+                        <!-- Replace the video URL with your own -->
+                        <iframe width="100%" height="415" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!--TODO-->
     <section class="section-padding section-bg" id="section_2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                    <img src="images/scott-graham-OQMZwNd3ThU-unsplash.jpg" class="custom-text-box-image img-fluid" alt="">
+                    <!--<img src="images/scott-graham-OQMZwNd3ThU-unsplash.jpg" class="custom-text-box-image img-fluid" alt="About Us Image">-->
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="custom-text-box">
@@ -179,7 +233,6 @@
         </div>
     </section>
 
-    <!--ABOUT US-->
     <section id="about-us">
         <div class="container">
             <div class="theme-title">
@@ -230,8 +283,26 @@
         </div>
     </section>
     
-    
 </main>
+
+<footer>
+    <div class="container">
+        <div class="footer-icons">
+            <a href="#" class="bi-twitter"></a>
+            <a href="#" class="bi-facebook"></a>
+            <a href="#" class="bi-instagram"></a>
+            <a href="#" class="bi-youtube"></a>
+            <a href="#" class="bi-whatsapp"></a>
+        </div>
+        <div class="quick-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2024 TanashePrac. All rights reserved.</p>
+    </div>
+</footer>
 
 <!-- Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
