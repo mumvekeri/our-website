@@ -1,8 +1,8 @@
-document.getElementById('contact-form').addEventListener('submit', function (event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
     // Collect form data
-    var name = document.getElementById('first-name').value;
+    var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var subject = document.getElementById('subject').value;
     var message = document.getElementById('message').value;
@@ -24,22 +24,22 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         From: email,
         Subject: subject,
         Body: "Name: " + name + "<br>Email: " + email + "<br>Message: " + message
-    }).then(function (message) {
+    }).then(function(message) {
         // Show success message
         Swal.fire({
             icon: 'success',
             title: 'Success!',
-            text: 'Your message has been sent successfully.',
+            text: 'Your message has been sent successfully.'
         });
 
         // Clear form fields
         document.getElementById('contact-form').reset();
-    }).catch(function (error) {
+    }).catch(function(error) {
         // Show error message
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Something went wrong! Please try again later.',
+            text: 'Something went wrong! Please try again later.'
         });
     });
 });
