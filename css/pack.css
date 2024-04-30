@@ -1,0 +1,89 @@
+.container-fluid {
+    padding: 5rem 0;
+}
+.section-title {
+    margin-bottom: 5rem;
+}
+.section-title h5 {
+    color: #007bff;
+}
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+.text-primary {
+    color: #007bff !important;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+.text-danger {
+    color: #dc3545 !important;
+}
+.border-bottom {
+    border-bottom: 1px solid #dee2e6 !important;
+}
+.rounded {
+    border-radius: 0.5rem !important;
+}
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+.wow {
+    visibility: hidden;
+}
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.wow.slideInUp {
+    animation-name: slideInUp;
+}
+.pricing-plan {
+    animation: slideInUp 0.5s ease-in-out;
+    transition: transform 0.3s;
+}
+.pricing-plan:hover {
+    transform: translateY(-5px);
+}
+.pricing-plan .plan-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.pricing-plan .plan-header h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.pricing-plan .plan-body {
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+.pricing-plan .plan-body .price {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.pricing-plan .plan-body ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pricing-plan .plan-body ul li {
+    margin-bottom: 0.5rem;
+}
+.pricing-plan .plan-body a.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}

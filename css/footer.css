@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+    background-color: #6392c2;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.site-header a {
+    color: #fff;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    display: flex;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #343a40;
+    border-bottom: 1px solid #4e555b;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Main Sections */
+section {
+    padding: 80px 0;
+}
+
+.theme-title h2 {
+    color: #007bff;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.single-about-content {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.single-about-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+h5 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+a.more {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a.more:hover {
+    color: #0056b3;
+}
+
+/* Custom Footer Styles */
+footer {
+padding: 60px 0; /* Adjust the top and bottom padding as needed */
+}
+
+.footer-section {
+margin-bottom: 30px; /* Margin between footer sections */
+}
+
+.footer-title {
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 20px;
+color: #fff; /* Footer title color */
+}
+
+.footer-contact-info {
+margin-bottom: 20px;
+}
+
+.footer-contact-info i {
+color: #007bff; /* Icon color */
+margin-right: 10px;
+}
+
+.footer-social-links a {
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+margin-right: 10px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+position: fixed;
+bottom: 30px;
+right: 30px;
+display: none;
+font-size: 24px;
+color: #fff;
+background-color: #007bff;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+}
+
+.back-to-top:hover {
+background-color: #0056b3;
+cursor: pointer;
+}

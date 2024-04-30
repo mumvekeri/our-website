@@ -8,9 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/services.css">
+     <!-- Custom CSS -->
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -114,34 +115,59 @@
             color: #0056b3;
         }
 
-        /* Footer */
-        footer {
-            background-color: #343a40;
-            color: #ccc;
-            padding: 50px 0;
-            text-align: center;
-        }
+        /* Custom Footer Styles */
+footer {
+    padding: 60px 0; /* Adjust the top and bottom padding as needed */
+}
 
-        .footer-icons a {
-            font-size: 24px;
-            margin: 0 10px;
-            color: #ccc;
-            transition: color 0.3s;
-        }
+.footer-section {
+    margin-bottom: 30px; /* Margin between footer sections */
+}
 
-        .footer-icons a:hover {
-            color: #fff;
-        }
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff; /* Footer title color */
+}
 
-        .quick-links a {
-            color: #ccc;
-            margin-right: 20px;
-            transition: color 0.3s;
-        }
+.footer-contact-info {
+    margin-bottom: 20px;
+}
 
-        .quick-links a:hover {
-            color: #fff;
-        }
+.footer-contact-info i {
+    color: #007bff; /* Icon color */
+    margin-right: 10px;
+}
+
+.footer-social-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background-color: #007bff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
     </style>
 </head>
 <body id="top">
@@ -149,11 +175,11 @@
 <header class="site-header">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 col-12 mb-3 mb-md-0">
+            <div class="col-md-6 mb-3 mb-md-0">
                 <p><i class="bi bi-geo-alt me-2"></i><a href="#">137 Bellairs Drive, NorthRiding, South Africa</a></p>
                 <p><i class="bi bi-envelope me-2"></i><a href="mailto:example@gmail.com">example@gmail.com</a></p>
             </div>
-            <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-end align-items-center">
+            <div class="col-md-6 d-flex justify-content-end align-items-center">
                 <ul class="social-icons">
                     <li><a href="#" class="bi-twitter"></a></li>
                     <li><a href="#" class="bi-facebook"></a></li>
@@ -184,19 +210,19 @@
                     <a class="nav-link" href="#about-us">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section_2">Services</a>
+                    <a class="nav-link" href="#service-section">Services</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink"
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarLightDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Packages</a></li>
-                        <li><a class="dropdown-item" href="#">Payments</a></li>
-                        <li><a class="dropdown-item" href="#">Testimonies</a></li>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="price.html">Packages</a></li>
+                        <li><a class="dropdown-item" href="price.html">Payments</a></li>
+                        <li><a class="dropdown-item" href="testimonies.html">Testimonials</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section_5">Contact</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -222,7 +248,7 @@
                 <h2>ABOUT OUR WEBSITE</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6">
+                <div class="col-md-3">
                     <div class="single-about-content text-center">
                         <div class="icon">
                             <i class="bi bi-code-slash"></i>
@@ -232,7 +258,7 @@
                         <a href="#" class="more">More Details</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-md-3">
                     <div class="single-about-content text-center">
                         <div class="icon">
                             <i class="bi bi-brush"></i>
@@ -242,7 +268,7 @@
                         <a href="#" class="more">More Details</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-md-3">
                     <div class="single-about-content text-center">
                         <div class="icon">
                             <i class="bi bi-megaphone"></i>
@@ -252,7 +278,7 @@
                         <a href="#" class="more">More Details</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
+                <div class="col-md-3">
                     <div class="single-about-content text-center">
                         <div class="icon">
                             <i class="bi bi-bar-chart-line"></i>
@@ -265,38 +291,134 @@
             </div>
         </div>
     </section>
-    
+
+    <section id="service-section" class="section-padding">
+        <div class="container">
+            <div class="theme-title text-center">
+                <h2>SERVICES WE PROVIDE</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-service-content">
+                        <div class="icon"><i class="bi bi-brush"></i></div>
+                        <h6><a href="#" onclick="showAlert(event)">Graphic Designing</a></h6>
+                        <p>Compelling content goes beyond words...</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-service-content">
+                        <div class="icon"><i class="bi bi-camera"></i></div>
+                        <h6><a href="#" onclick="showAlert(event)">Content Creation</a></h6>
+                        <p>Effective content creation is the cornerstone...</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-service-content">
+                        <div class="icon"><i class="bi bi-laptop"></i></div>
+                        <h6><a href="#" onclick="showAlert(event)">Web Design</a></h6>
+                        <p>At Tanashe, we believe that effective web design...</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-service-content">
+                        <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                        <h6><a href="#" onclick="showAlert(event)">Digital Marketing</a></h6>
+                        <p>Effective digital marketing is more than just advertising...</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-service-content">
+                        <div class="icon"><i class="bi bi-headset"></i></div>
+                        <h6><a href="#" onclick="showAlert(event)">Online Support</a></h6>
+                        <p>Effective online support goes beyond just resolving...</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="single-service-content">
+                        <div class="icon"><i class="bi bi-code"></i></div>
+                        <h6><a href="#" onclick="showAlert(event)">Web Development</a></h6>
+                        <p>At Tanashe, we understand that effective web development...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer>
+<footer class="bg-dark text-light py-5">
     <div class="container">
-        <div class="footer-icons text-center">
-            <a href="#" class="bi-twitter"></a>
-            <a href="#" class="bi-facebook"></a>
-            <a href="#" class="bi-instagram"></a>
-            <a href="#" class="bi-youtube"></a>
-            <a href="#" class="bi-whatsapp"></a>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <h3 class="h5 mb-4">Get In Touch</h3>
+                <div class="mb-3">
+                    <i class="bi bi-geo-alt text-primary me-2"></i>
+                    <span>Harare Zimbabwe</span>
+                </div>
+                <div class="mb-3">
+                    <i class="bi bi-envelope-open text-primary me-2"></i>
+                    <span>info@example.com</span>
+                </div>
+                <div class="mb-3">
+                    <i class="bi bi-telephone text-primary me-2"></i>
+                    <span>000 779 900 222</span>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-primary me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-primary me-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <h3 class="h5 mb-4">Quick Links</h3>
+                <div class="mb-3">
+                    <a href="/" class="text-light"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                </div>
+                <div class="mb-3">
+                    <a href="/about" class="text-light"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                </div>
+                <div class="mb-3">
+                    <a href="/services.html" class="text-light"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                </div>
+                <div class="mb-3">
+                    <a href="/contact.html" class="text-light"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
         </div>
-        <div class="quick-links text-center">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-        </div>
-        <p class="text-center">&copy; 2024 TanashePrac. All rights reserved.</p>
     </div>
 </footer>
 
-<!-- Bootstrap JS -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- Bootstrap JS and Custom Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.sticky.js"></script>
-<script src="js/click-scroll.js"></script>
-<script src="js/counter.js"></script>
-<script src="js/custom.js"></script>
+<script>
+    $(document).ready(function() {
+        // Smooth scrolling for anchor links
+        $("a.nav-link").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
