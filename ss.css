@@ -1,0 +1,104 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #171616;
+            font-size: 16px;
+        }
+
+        .site-header {
+            background-color: #6392c2;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .site-header a {
+            color: #221f1f;
+        }
+
+        .social-icons a {
+            color: #6b4cc0;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #a76161;
+        }
+
+        .navbar-nav .nav-link {
+            color: #976c6c !important;
+        }
+        .navbar-brand .big-text {
+        font-size: 40px;
+        }
+
+        .theme-title h2 {
+            color: #007bff;
+        }
+
+        .single-about-content {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .single-about-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .single-about-content h5 a {
+            color: #007bff;
+        }
+
+        .single-about-content p {
+            color: #666;
+        }
+
+        .video-section {
+            background-color: #000;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background-color: #35737f;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #b876b4;
+            display: block;
+            margin-bottom: auto;
+        }
+
+        .footer-icons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .footer-icons a {
+            font-size: 24px;
+            margin: 0 10px;
+        }
